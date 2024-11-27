@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="sidebar">
+    <div id="url-container">
+      <div class="nav-buttons">
+        <button onclick="goBack()">←</button>
+        <button onclick="goForward()">→</button>
+      </div>
+      <input id="url-bar" type="text" placeholder="Enter URL..." onkeydown="handleUrl(event)">
+    </div>
+
+    <div id="tabs">
+      <!-- tabs will be rendered here -->
+    </div>
+
+    <div id="bookmarks">
+      <div id="bookmark-list"></div>
+    </div>
+  </div>
+
+  <div id="main-content"></div>
+
+  <script src="index.js"></script>
+</body>
+</html>
